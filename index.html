@@ -75,8 +75,8 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold"
-              >Hockey<span class="text-[#FF4240;]">’</span>s</a
+            <a class="text-2xl lg:text-4xl font-extrabold"
+              >Hockey<span class="text-[#FF4240] mr-0">’</span>s</a
             >
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -110,16 +110,24 @@
     <!-- body -->
     <main>
       <!-- banner carousel -start -->
-      <div class="container m-auto">
+      <div class="container mx-auto">
         <div class="carousel w-full py-5">
           <!-- slide-1 -->
-          <div id="slide1" class="carousel-item relative w-full m-auto">
+          <div id="slide1" class="carousel-item relative w-full mx-auto">
             <img class="w-full" src="./Images/1.png" alt="" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[black] border-none text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[black] border-none text-white"
+                >❯</a
+              >
             </div>
           </div>
 
@@ -170,12 +178,14 @@
           <div
             class="lg:w-[24%] flex flex-col justify-center items-center space-y-5"
           >
-            <div
-              class="radial-progress text-[#FF4240]"
-              style="--value: 87"
-              role="progressbar"
-            >
-              <span class="text-black font-extrabold">87%</span>
+            <div>
+              <div
+                class="radial-progress text-[#FF4240]"
+                style="--value: 87"
+                role="progressbar "
+              >
+                <span class="text-black font-extrabold rotate-0">87%</span>
+              </div>
             </div>
             <div class="text-center space-y-3">
               <h2 class="text-[#131318] text-[20px] font-extrabold">
@@ -774,7 +784,7 @@
               </div>
               <div>
                 <h4 class="text-[18px] text-[#13131899]">Phone Number :</h4>
-                <h2 class="text-[26px] text-[#131318] font-semibold">
+                <h2 class="lg:text-[26px] text-[#131318] font-semibold">
                   (+62) 123-321-543
                 </h2>
               </div>
@@ -788,21 +798,21 @@
               </div>
               <div>
                 <h4 class="text-[18px] text-[#13131899]">Email :</h4>
-                <h2 class="text-[26px] text-[#131318] font-semibold">
+                <h2 class="lg:text-[26px] text-[#131318] font-semibold">
                   hockeys@support.com
                 </h2>
               </div>
             </div>
             <!-- form-card-3 -->
             <div
-              class="bg-[#629CF31A] w-96 h-52 shadow-md space-y-6 flex flex-col justify-center items-center p-10 rounded-lg"
+              class="bg-[#629CF31A] w-96 h-52 shadow-md space-y-6 flex flex-col justify-center items-start p-10 rounded-lg"
             >
               <div>
                 <img src="./Images/Group 1171275321.png" alt="" />
               </div>
               <div>
-                <h4 class="text-[20px] text-[#13131899]">Location :</h4>
-                <h2 class="text-[26px] text-[#131318] font-semibold">
+                <h4 class="text-[18px] text-[#13131899]">Location :</h4>
+                <h2 class="lg:text-[26px] text-[#131318] font-semibold">
                   152/1 Wireless Gate
                 </h2>
               </div>
@@ -896,9 +906,82 @@
           </div>
         </div>
       </div>
+      <!-- contact-section-end -->
+
+      <!-- social section-start -->
+
+      <div class="container mx-auto mt-16 space-y-6 h-36 bg-[#13131808]">
+        <div class="text-center text-[24px] text-[#131318] font-extrabold">
+          <h2>Social Media</h2>
+        </div>
+        <div class="flex justify-center gap-7 lg:text-2xl">
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-github"></i></span>
+        </div>
+      </div>
     </main>
+    <!-- social-end -->
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="lg:h-[400px] bg-[#131318]">
+      <div class="container grid grid-cols-4 gap-20 lg:ml-44 p-20">
+        <!-- footer-content-1 -->
+        <div class="space-y-4 col-span-4 lg:col-span-1">
+          <h2 class="font-bold text-[20px] text-white">Get In Touch</h2>
+          <p class="text-[#FFFFFF99]">
+            Translations in context of "to get in touch" in English-Italian from
+            Reverso Context: to get in touch with
+          </p>
+          <div class="flex gap-4">
+            <span class="ornageclr"
+              ><i class="fa-regular fa-envelope"></i
+            ></span>
+            <h3 class="text-[#FFFFFFCC]">hockeys@support.com</h3>
+          </div>
+          <div class="flex gap-4">
+            <span class="ornageclr"><i class="fa-solid fa-phone"></i></span>
+            <h3 class="text-[#FFFFFFCC]">(+62) 123-321-543</h3>
+          </div>
+        </div>
+
+        <!-- footer content-2 -->
+        <div class="col-span-2 lg:col-span-1">
+          <h2 class="font-bold text-[18pxpx] text-white">Company</h2>
+          <div class="text-[#FFFFFF99] mt-8 space-y-4">
+            <h4>About us</h4>
+            <h4>Leadership</h4>
+            <h4>Careers</h4>
+            <h4>News & Article</h4>
+            <h4>Legal Notice</h4>
+          </div>
+        </div>
+
+        <!-- footer-content-3 -->
+        <div class="col-span-2 lg:col-span-1">
+          <h2 class="font-bold text-[18pxpx] text-white">Support</h2>
+          <div class="text-[#FFFFFF99] mt-8 space-y-4">
+            <h4>About us</h4>
+            <h4>Leadership</h4>
+            <h4>Careers</h4>
+            <h4>News & Article</h4>
+            <h4>Legal Notice</h4>
+          </div>
+        </div>
+
+        <!-- footer-content-4 -->
+        <div class="col-span-4 lg:col-span-1">
+          <h2 class="font-bold text-[18pxpx] text-white">Services</h2>
+          <div class="text-[#FFFFFF99] mt-8 space-y-4">
+            <h4>About us</h4>
+            <h4>Leadership</h4>
+            <h4>Careers</h4>
+            <h4>News & Article</h4>
+            <h4>Legal Notice</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
